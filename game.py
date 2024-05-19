@@ -29,7 +29,7 @@ def generate_fair_price():
 
 def print_cards(drawn_cards):
     shown_cards = 0
-    print_string = f"Pulls {bcolors.OKCYAN}|:|{bcolors.ENDC} "
+    print_string = f"Cards {bcolors.OKCYAN}|:|{bcolors.ENDC} "
     for card in drawn_cards:
         if random.choice([True, False]) and shown_cards < SHOW_CARDS:
             print_string += f"{card} | "
@@ -50,7 +50,7 @@ def calc_pnl(position, size, bid, ask, max_long_position, max_short_position, dr
             print(bcolors.WARNING + f"Max long position is {max_long_position}. You tried to take {size}. Trade is not being recorded" + bcolors.ENDC)
         else:
 
-            print_string = f"Drawn {bcolors.OKCYAN}|:|{bcolors.ENDC} "
+            print_string = f"Cards {bcolors.OKCYAN}|:|{bcolors.ENDC} "
             for i, card in enumerate(drawn_cards):
                 print_string += f"{card} | "
             print_string = print_string[:-3]
@@ -63,7 +63,7 @@ def calc_pnl(position, size, bid, ask, max_long_position, max_short_position, dr
             print(bcolors.WARNING + f"Max short position is {max_short_position}. You tried to take {size}. Trade is not being recorded" + bcolors.ENDC)
         else:
 
-            print_string = f"Drawn {bcolors.OKCYAN}|:|{bcolors.ENDC} "
+            print_string = f"Cards {bcolors.OKCYAN}|:|{bcolors.ENDC} "
             for i, card in enumerate(drawn_cards):
                 print_string += f"{card} | "
             print_string = print_string[:-3]
