@@ -9,7 +9,9 @@
 - Inventory is not held, it is realized at the end of each round and updates your balance")
 - If you run out of money, the game is over")
 
-Inspiration was taken from https://www.tradermath.org/market-games/market-taking-game/lobby
+Inspired by https://www.tradermath.org/market-games/market-taking-game/lobby
+
+To the creators: if you'd like me to take this down please reach out, I'd be happy to comply no worries
 
 <hr>
 
